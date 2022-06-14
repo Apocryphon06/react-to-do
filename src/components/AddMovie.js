@@ -18,6 +18,11 @@ const AddMovie = () => {
     setMovies((prevMovies) => [{ name: name,id:id }, ...prevMovies]);
   };
   
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      addMovie(e);
+    }
+  }
 
   return (
     <div className="container w-50">
@@ -29,6 +34,7 @@ const AddMovie = () => {
           placeholder="Enter task"
           aria-label="Enter task"
           aria-describedby="basic-addon2"
+          onKeyDown={handleKeyPress}
           
         />
         <div className="input-group-append">

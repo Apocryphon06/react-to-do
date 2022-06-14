@@ -38,7 +38,7 @@ const AddMovie = () => {
           
         />
         <div className="input-group-append">
-          <button className="btn btn-primary" onClick={addMovie} type="button">
+          <button className="btn bg-dark text-white" onClick={addMovie} type="button">
             Add
           </button>
         </div>

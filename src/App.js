@@ -6,16 +6,14 @@ import AddMovie from "./components/AddMovie";
 import Movie from "./components/Movie";
 
 function App() {
-  
-
   return (
     <MovieProvider>
-      <div className="App ">
+      <div className="App">
         <Nav></Nav>
         <br></br>
         <AddMovie></AddMovie>
         <br></br>
-        
+
         <Movie></Movie>
       </div>
     </MovieProvider>

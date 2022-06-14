@@ -14,7 +14,7 @@ const AddMovie = () => {
 
   const addMovie = (e) => {
     e.preventDefault();
-    setId(id+1)
+    setId((prevId)=>prevId+1) //changed
     setMovies((prevMovies) => [{ name: name,id:id }, ...prevMovies]);
   };
   
